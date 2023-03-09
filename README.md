@@ -9,7 +9,7 @@ python==3.7.16
 CUDA 11.6
 pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6
 
-## 以训练好的权值文件（ep190-loss0.435-val_loss0.361.pth）下载链接：
+## 已训练好的权值文件（ep190-loss0.435-val_loss0.361.pth）下载链接：
    https://drive.google.com/file/d/1c1WdJbnbysHz0cPa79W0gVq7snmpI6io/view?usp=share_link
    
 ## 可以在Pytorch下载机器对应的版本。网址：https://pytorch.org/get-started/locally/
