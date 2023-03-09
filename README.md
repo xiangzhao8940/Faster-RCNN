@@ -9,6 +9,9 @@ python==3.7.16
 CUDA 11.6
 pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6
 
+## 以训练好的权值文件（ep190-loss0.435-val_loss0.361.pth）下载链接：
+   https://drive.google.com/file/d/1c1WdJbnbysHz0cPa79W0gVq7snmpI6io/view?usp=share_link
+   
 ## 可以在Pytorch下载机器对应的版本。网址：https://pytorch.org/get-started/locally/
 
 ## 训练步骤
@@ -17,7 +20,8 @@ pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6
 1. 数据集的准备  
 训练前需要自己制作好数据集，包括图片resize, 真实框的标注（LabelImg工具）等。
 训练前将标签文件放在VOCdevkit文件夹下的VOC2007文件夹下的Annotation中。   
-训练前将图片文件放在VOCdevkit文件夹下的VOC2007文件夹下的JPEGImages中。   
+训练前将图片文件放在VOCdevkit文件夹下的VOC2007文件夹下的JPEGImages中。
+图片文件放置在压缩文件JEPGImages中，解压后将2000张图片拷贝至VOCdevkit文件夹下的VOC2007文件夹下的JPEGImages里面。
 
 2. 数据集的处理  
 在完成数据集的摆放之后，我们需要利用voc_annotation.py获得训练用的2007_train.txt和2007_val.txt，这两个txt文件会直接保存在主文件夹中。   
